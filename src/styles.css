@@ -1,1 +1,248 @@
-/* You can add global styles to this file, and also import other style files */
+/***start font***/
+@font-face {
+    font-family: 'gotham';
+    font-weight: 100;
+    src: url(./assets/fonts/gotham/go-thin.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 200;
+    src: url(./assets/fonts/gotham/go-xlight.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 300;
+    src: url(./assets/fonts/gotham/go-light.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 400;
+    src: url(./assets/fonts/gotham/go-medium.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 500;
+    src: url(./assets/fonts/gotham/go-book.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 600;
+    src: url(./assets/fonts/gotham/go-bold.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 700;
+    src: url(./assets/fonts/gotham/go-black.ttf);
+}
+
+@font-face {
+    font-family: 'gotham';
+    font-weight: 800;
+    src: url(./assets/fonts/gotham/go-ultra.ttf);
+}
+/***end font***/
+
+/***start main***/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'gotham', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/***end main***/
+/***start grid***/
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+[class^="col-f-"] {
+    padding: 0 15px;
+    position: relative;
+    align-items: stretch;
+    min-height: 1px;
+}
+
+.col-f-xs-12 {
+    width: 100%;
+}
+.col-f-xs-11 {
+    width: 91.6666%;
+}
+.col-f-xs-10 {
+    width: 83.3333%;
+}
+.col-f-xs-9 {
+    width: 75%;
+}
+.col-f-xs-8 {
+    width: 66.6666%;
+}
+.col-f-xs-7 {
+    width: 58.3333%;
+}
+.col-f-xs-6 {
+    width: 50%;
+}
+.col-f-xs-5 {
+    width: 41.6666%;
+}
+.col-f-xs-4 {
+    width: 33.3333%;
+}
+.col-f-xs-3 {
+    width: 25%;
+}
+.col-f-xs-2 {
+    width: 16.6666%;
+}
+.col-f-xs-1 {
+    width: 8.3333%;
+}
+
+@media screen and (min-width: 769px) {
+    .col-f-sm-12 {
+        width: 100%;
+    }
+    .col-f-sm-11 {
+        width: 91.6666%;
+    }
+    .col-f-sm-10 {
+        width: 83.3333%;
+    }
+    .col-f-sm-9 {
+        width: 75%;
+    }
+    .col-f-sm-8 {
+        width: 66.6666%;
+    }
+    .col-f-sm-7 {
+        width: 58.3333%;
+    }
+    .col-f-sm-6 {
+        width: 50%;
+    }
+    .col-f-sm-5 {
+        width: 41.6666%;
+    }
+    .col-f-sm-4 {
+        width: 33.3333%;
+    }
+    .col-f-sm-3 {
+        width: 25%;
+    }
+    .col-f-sm-2 {
+        width: 16.6666%;
+    }
+    .col-f-sm-1 {
+        width: 8.3333%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .col-f-md-12 {
+        width: 100%;
+    }
+    .col-f-md-11 {
+        width: 91.6666%;
+    }
+    .col-f-md-10 {
+        width: 83.3333%;
+    }
+    .col-f-md-9 {
+        width: 75%;
+    }
+    .col-f-md-8 {
+        width: 66.6666%;
+    }
+    .col-f-md-7 {
+        width: 58.3333%;
+    }
+    .col-f-md-6 {
+        width: 50%;
+    }
+    .col-f-md-5 {
+        width: 41.6666%;
+    }
+    .col-f-md-4 {
+        width: 33.3333%;
+    }
+    .col-f-md-3 {
+        width: 25%;
+    }
+    .col-f-md-2 {
+        width: 16.6666%;
+    }
+    .col-f-md-1 {
+        width: 8.3333%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-f-lg-12 {
+        width: 100%;
+    }
+    .col-f-lg-11 {
+        width: 91.6666%;
+    }
+    .col-f-lg-10 {
+        width: 83.3333%;
+    }
+    .col-f-lg-9 {
+        width: 75%;
+    }
+    .col-f-lg-8 {
+        width: 66.6666%;
+    }
+    .col-f-lg-7 {
+        width: 58.3333%;
+    }
+    .col-f-lg-6 {
+        width: 50%;
+    }
+    .col-f-lg-5 {
+        width: 41.6666%;
+    }
+    .col-f-lg-4 {
+        width: 33.3333%;
+    }
+    .col-f-lg-3 {
+        width: 25%;
+    }
+    .col-f-lg-2 {
+        width: 16.6666%;
+    }
+    .col-f-lg-1 {
+        width: 8.3333%;
+    }
+}

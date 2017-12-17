@@ -1,0 +1,13 @@
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.nav-bar__logo {
+    max-width: 150px;
+}
+.nav-bar__balance {
+    font-size: 18px;
+    color: #3485d6;
+}
