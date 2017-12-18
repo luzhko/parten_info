@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class PartnersComponent {
+    public viewProductLine: boolean = false;
+    constructor () {}
 
+    viewCol () {
+        this.viewProductLine = true;
+    }
+
+    viewLine () {
+        this.viewProductLine = false;
+    }
 }

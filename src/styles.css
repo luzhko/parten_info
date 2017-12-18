@@ -79,6 +79,33 @@ img {
     margin-left: auto;
 }
 /***end main***/
+
+/***start icon***/
+.icn{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.icn__view {
+    background-image: url(./assets/img/view.png);
+}
+.icn__view__line {
+    background-position: 0 0;
+}
+.icn__view__col {
+    background-position: -32px 0;
+}
+.icn__view__line:hover,
+.icn__view__line.active {
+    background-position: 0 -32px;
+}
+.icn__view__col:hover,
+.icn__view__col.active {
+    background-position: -32px -32px;
+}
+/***end icon***/
+
 /***start grid***/
 .row-flex {
     display: flex;

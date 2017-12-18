@@ -5,21 +5,22 @@
             <input type="text" class="" placeholder="Поиск:">
         </form>
         <div class="partners-nav__view">
-            <div class="view__col">
-
+            Вид:
+            <div class="view__col" (click)="viewCol()">
+                <i class="icn icn__view icn__view__line" [ngClass]="{'active': viewProductLine}"></i>
             </div>
-            <div class="view__line">
-
+            <div class="view__line" (click)="viewLine()">
+                <i class="icn icn__view icn__view__col" [ngClass]="{'active': !viewProductLine}"></i>
             </div>
         </div>
     </div>
     <div class="row-flex">
-        <div class="col-f-xs-6 col-f-sm-3">
+        <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
                 <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
                     <img src="../assets/img/partner-logo.png" alt="partner-logo">
                 </div>
-                <div class="partner__balls">
+                <div class="partner__bonus">
                     <div class="partner__balls__inner">
                         400
                         <div class="partner__balls__small-logo"></div>
@@ -27,12 +28,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-f-xs-6 col-f-sm-3">
+        <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
                 <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
                     <img src="../assets/img/partner-logo.png" alt="partner-logo">
                 </div>
-                <div class="partner__balls">
+                <div class="partner__bonus">
                     <div class="partner__balls__inner">
                         400
                         <div class="partner__balls__small-logo"></div>
@@ -40,12 +41,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-f-xs-6 col-f-sm-3">
+        <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
                 <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
                     <img src="../assets/img/partner-logo.png" alt="partner-logo">
                 </div>
-                <div class="partner__balls">
+                <div class="partner__bonus">
                     <div class="partner__balls__inner">
                         400
                         <div class="partner__balls__small-logo"></div>
@@ -53,12 +54,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-f-xs-6 col-f-sm-3">
+        <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
                 <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
                     <img src="../assets/img/partner-logo.png" alt="partner-logo">
                 </div>
-                <div class="partner__balls">
+                <div class="partner__bonus">
                     <div class="partner__balls__inner">
                         400
                         <div class="partner__balls__small-logo"></div>
@@ -66,12 +67,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-f-xs-6 col-f-sm-3">
+        <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
                 <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
                     <img src="../assets/img/partner-logo.png" alt="partner-logo">
                 </div>
-                <div class="partner__balls">
+                <div class="partner__bonus">
                     <div class="partner__balls__inner">
                         400
                         <div class="partner__balls__small-logo"></div>

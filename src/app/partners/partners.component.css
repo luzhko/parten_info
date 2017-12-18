@@ -3,6 +3,24 @@
     height: 1px;
     background-color: rgba(0,0,0,.1);
 }
+.partners-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.partners-nav__view {
+    font-size: 14px;
+    color: rgba(0,0,0,.3);
+}
+.view__col,
+.view__line {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+[class^="col-f-"].__line {
+    width: 100%;
+}
 .partner {
     box-shadow: 0px 0px 3px rgba(0,0,0,.1);
     border-radius: 5px;
@@ -17,7 +35,7 @@
 .partner__logo img {
     margin: auto;
 }
-.partner__balls {
+.partner__bonus {
     padding: 20px 15px;
     font-size: 14px;
     color: #a5a5a5;
@@ -42,7 +60,7 @@
     .partner__logo {
         height: 150px;
     }
-    .partner__balls {
+    .partner__bonus {
         font-size: 12px;
         padding: 15px 10px;
     }
