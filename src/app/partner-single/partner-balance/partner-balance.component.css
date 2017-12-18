@@ -1,0 +1,26 @@
+.balance {
+    text-align: center;
+    margin-top: 30px;
+}
+.balance-code {
+    margin: 0px auto 30px;
+    width: 300px;
+    text-align: center;
+}
+.balance-amount {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 30px 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.balance-amount__title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.balance-amount__total {
+    font-size: 20px;
+    font-weight: 700;
+}

@@ -4,7 +4,53 @@
 .partner__logo {
     display: flex;
     height: 300px;
+    position: relative;
+}
+.slid-left,
+.slid-right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slid-left {
+    left: 0px;
+}
+.slid-right {
+    right: 0px;
+}
+.partner__logo:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(256,256,256,.2);
 }
 .partner__logo__img {
     margin: auto;
+}
+.partner__tab__nav {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+.partner__tab__nav li {
+    width: 33.3%;
+    text-align: center;
+    padding: 20px 0px;
+    color: rgba(256,256,256,.6);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+.partner__tab__nav li:focus {
+    outline: none;
+}
+.partner__tab__nav li.active,
+.partner__tab__nav li:hover {
+    color: #fff;
+    border-bottom-color: #fff;
 }

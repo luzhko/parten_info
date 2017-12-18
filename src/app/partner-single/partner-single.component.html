@@ -2,6 +2,26 @@
     <div class="container">
         <div class="partner__logo">
             <img src="../assets/img/partner-logo.png" class="partner__logo__img" alt="partner-logo">
+            <div class="slid-left">
+                <img src="../assets/img/left.png" alt="left">
+            </div>
+            <div class="slid-right">
+                <img src="../assets/img/right.png" alt="right">
+            </div>
+        </div>
+        <div class="partner_tab">
+            <ul class="partner__tab__nav">
+                <li [routerLink]="['/partner', 1, 'balance']" routerLinkActive="active">
+                    Бонусы
+                </li>
+                <li [routerLink]="['/partner', 1, 'replenish']" routerLinkActive="active">
+                    Пополнить
+                </li>
+                <li [routerLink]="['/partner', 1, 'map']" routerLinkActive="active">
+                    Карта
+                </li>
+            </ul>
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>
