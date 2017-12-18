@@ -9,11 +9,13 @@ import { ROUTES_CONFIG } from './app-routing.module';
 import { PartnersService } from './shared/services/partners.service';
 
 import { PartnersComponent } from './partners/partners.component';
+import { PartnerSingleComponent } from './partner-single/partner-single.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PartnersComponent
+    PartnersComponent,
+    PartnerSingleComponent
   ],
   imports: [
     BrowserModule,

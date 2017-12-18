@@ -1,0 +1,10 @@
+.partner {
+
+}
+.partner__logo {
+    display: flex;
+    height: 300px;
+}
+.partner__logo__img {
+    margin: auto;
+}

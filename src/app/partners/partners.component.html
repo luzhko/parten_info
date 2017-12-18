@@ -2,7 +2,10 @@
 <div class="container">
     <div class="partners-nav">
         <form class="partners-nav__search">
-            <input type="text" class="" placeholder="Поиск:">
+            <div class="search">
+                <input class="search__input" (input)="search(searchRef.value)" #searchRef name="search" type="text" placeholder="Поиск:">
+                <img class="search__img" src="../assets/img/search.png" alt="search">
+            </div>
         </form>
         <div class="partners-nav__view">
             Вид:
@@ -17,67 +20,77 @@
     <div class="row-flex">
         <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
-                <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
-                    <img src="../assets/img/partner-logo.png" alt="partner-logo">
-                </div>
-                <div class="partner__bonus">
-                    <div class="partner__balls__inner">
-                        400
-                        <div class="partner__balls__small-logo"></div>
+                <a [routerLink]="['/partner', '1']">
+                    <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
+                        <img src="../assets/img/partner-logo.png" alt="partner-logo">
                     </div>
-                </div>
+                    <div class="partner__bonus">
+                        <div class="partner__balls__inner">
+                            400
+                            <div class="partner__balls__small-logo"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
-                <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
-                    <img src="../assets/img/partner-logo.png" alt="partner-logo">
-                </div>
-                <div class="partner__bonus">
-                    <div class="partner__balls__inner">
-                        400
-                        <div class="partner__balls__small-logo"></div>
+                <a [routerLink]="['/partner', '1']">
+                    <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
+                        <img src="../assets/img/partner-logo.png" alt="partner-logo">
                     </div>
-                </div>
+                    <div class="partner__bonus">
+                        <div class="partner__balls__inner">
+                            400
+                            <div class="partner__balls__small-logo"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
-                <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
-                    <img src="../assets/img/partner-logo.png" alt="partner-logo">
-                </div>
-                <div class="partner__bonus">
-                    <div class="partner__balls__inner">
-                        400
-                        <div class="partner__balls__small-logo"></div>
+                <a [routerLink]="['/partner', '1']">
+                    <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
+                        <img src="../assets/img/partner-logo.png" alt="partner-logo">
                     </div>
-                </div>
+                    <div class="partner__bonus">
+                        <div class="partner__balls__inner">
+                            400
+                            <div class="partner__balls__small-logo"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
-                <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
-                    <img src="../assets/img/partner-logo.png" alt="partner-logo">
-                </div>
-                <div class="partner__bonus">
-                    <div class="partner__balls__inner">
-                        400
-                        <div class="partner__balls__small-logo"></div>
+                <a [routerLink]="['/partner', '1']">
+                    <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
+                        <img src="../assets/img/partner-logo.png" alt="partner-logo">
                     </div>
-                </div>
+                    <div class="partner__bonus">
+                        <div class="partner__balls__inner">
+                            400
+                            <div class="partner__balls__small-logo"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="col-f-xs-6 col-f-sm-3" [ngClass]="{'__line': viewProductLine}">
             <div class="partner">
-                <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
-                    <img src="../assets/img/partner-logo.png" alt="partner-logo">
-                </div>
-                <div class="partner__bonus">
-                    <div class="partner__balls__inner">
-                        400
-                        <div class="partner__balls__small-logo"></div>
+                <a [routerLink]="['/partner', '1']">
+                    <div class="partner__logo" [ngStyle]="{'background-color':'#8dc73f'}">
+                        <img src="../assets/img/partner-logo.png" alt="partner-logo">
                     </div>
-                </div>
+                    <div class="partner__bonus">
+                        <div class="partner__balls__inner">
+                            400
+                            <div class="partner__balls__small-logo"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

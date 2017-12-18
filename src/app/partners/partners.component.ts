@@ -17,4 +17,8 @@ export class PartnersComponent {
     viewLine () {
         this.viewProductLine = false;
     }
+
+    search (data) {
+        console.log(data);
+    }
 }
