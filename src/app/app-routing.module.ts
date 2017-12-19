@@ -7,8 +7,10 @@ import { PartnerBalanceComponent } from './partner-single/partner-balance/partne
 import { PartnerMapComponent } from './partner-single/partner-map/partner-map.component';
 import { PartnerReplenishComponent } from './partner-single/partner-replenish/partner-replenish.component';
 
+import { PartnerResolve } from './shared/guards/partner-resolver.service';
+
 export const ROUTES_CONFIG: Routes = [
-    {path: '', component: PartnersComponent},
+    {path: '', component: PartnersComponent, resolve: {partners: PartnerResolve} },
     { path: 'partner/:id', component: PartnerSingleComponent,
         children: [
             { path: 'balance', component: PartnerBalanceComponent },

@@ -12,6 +12,6 @@ export class AppComponent {
   2. Event
   3. Get id ++
   4. Map ++
-  5. data - routing
+  5. data - routing ++
  */
 }

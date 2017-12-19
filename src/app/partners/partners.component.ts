@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { Partner } from '../shared/models/partner';
 
 @Component ({
     selector: 'app-partners',
@@ -6,9 +9,19 @@ import { Component } from '@angular/core';
     styleUrls: ['./partners.component.css']
 })
 
-export class PartnersComponent {
+export class PartnersComponent implements OnInit {
     public viewProductLine: boolean = false;
-    constructor () {}
+    public partners: Partner[]
+    constructor (
+        private activatedRoute: ActivatedRoute
+    ) {}
+
+    ngOnInit () {
+        this.activatedRoute.data.subscribe((data: {partners: Partner[] }) => {
+            this.partners = data.partners;
+        });
+        // console.log(this.partners);
+    }
 
     viewCol () {
         this.viewProductLine = true;

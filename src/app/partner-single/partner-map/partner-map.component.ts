@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PartnersService } from '../../shared/services/partners.service';
-import { MaekerInterface } from '../../shared/model/marker';
+import { MaekerInterface } from '../../shared/models/marker';
 
 @Component ({
     selector: 'app-partner-map',

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ROUTES_CONFIG } from './app-routing.module';
 
 import { PartnersService } from './shared/services/partners.service';
+import { PartnerResolve } from './shared/guards/partner-resolver.service';
 
 import { PartnersComponent } from './partners/partners.component';
 import { PartnerSingleComponent } from './partner-single/partner-single.component';
@@ -33,7 +34,8 @@ import { AgmCoreModule } from '@agm/core';
     })
   ],
   providers: [
-    PartnersService
+    PartnersService,
+    PartnerResolve
   ],
   bootstrap: [AppComponent]
 })

@@ -6,13 +6,17 @@ export class PartnersService {
     public partners = null;
     public partner_id = null;
 
-    getId () {
+    public getAllPartners () {
+        return  [
+            {
+                lat: 1
+            }
+        ];
+    }
+    public getId () {
         return this.partner_id;
     }
-    setId (id) {
+    public setId (id) {
         this.partner_id = id;
-    }
-    der () {
-        console.log(1);
     }
 }
