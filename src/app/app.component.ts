@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 /*  TO DO
-  1. html
+  1. html, code
+  __
   2. Event
   3. Get id ++
   4. Map ++
