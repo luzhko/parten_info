@@ -14,6 +14,8 @@ import { PartnerBalanceComponent } from './partner-single/partner-balance/partne
 import { PartnerMapComponent } from './partner-single/partner-map/partner-map.component';
 import { PartnerReplenishComponent } from './partner-single/partner-replenish/partner-replenish.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,10 @@ import { PartnerReplenishComponent } from './partner-single/partner-replenish/pa
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES_CONFIG)
+    RouterModule.forRoot(ROUTES_CONFIG),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBli2JPeExUAEe4ScMoXyVdcs-BVTnqoX8'
+    })
   ],
   providers: [
     PartnersService

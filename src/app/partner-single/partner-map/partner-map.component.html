@@ -1,3 +1,15 @@
 <div class="container">
-    map
+    <agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    >
+        <agm-marker
+        *ngFor="let marker of markers; let i = index"
+        [latitude]="marker.lat"
+        [longitude]="marker.lng"
+        [iconUrl]="marker.icon"
+        >
+        </agm-marker>
+    </agm-map>
 </div>
