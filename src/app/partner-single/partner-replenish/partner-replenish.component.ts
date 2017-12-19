@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PartnersService } from '../../shared/services/partners.service';
 
 @Component ({
     selector: 'app-partner-replenish',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
     styleUrls: ['./partner-replenish.component.css']
 })
 
-export class PartnerReplenishComponent {
+export class PartnerReplenishComponent implements OnInit {
+    id: number;
+    constructor (
+        private partnersService: PartnersService
+    ) {}
 
+    ngOnInit () {
+        this.id = this.partnersService.getId();
+        console.log(1);
+    }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PartnersService } from '../../shared/services/partners.service';
 import { MaekerInterface } from '../../shared/model/marker';
 
 @Component ({
@@ -7,13 +8,18 @@ import { MaekerInterface } from '../../shared/model/marker';
     styleUrls: ['./partner-map.component.css']
 })
 
-export class PartnerMapComponent {
+export class PartnerMapComponent implements OnInit {
+    id: number;
     // google maps zoom level
     zoom: number = 8;
 
     // initial center position for the map
     lat: number = 51.673858;
     lng: number = 7.815982;
+
+    constructor (
+        private partnersService: PartnersService
+    ) {}
 
     markers: MaekerInterface[] = [
         {
@@ -32,4 +38,9 @@ export class PartnerMapComponent {
             icon: '../assets/img/partner-logo.png'
         },
     ];
+
+    ngOnInit () {
+        this.id = this.partnersService.getId();
+        console.log(1);
+    }
 }

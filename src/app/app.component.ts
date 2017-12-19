@@ -9,7 +9,8 @@ export class AppComponent {
 /*  TO DO
   1. html
   2. Event
-  3. Get id
-  4. Map
+  3. Get id ++
+  4. Map ++
+  5. data - routing
  */
 }
